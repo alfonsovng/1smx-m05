@@ -50,10 +50,10 @@ Per tant, amb el mateix exemple, a la xarxa 192.168.1.0/24 tinc disponible 254 I
 
 Si tinc la màquina amb IP 172.175.12.2 /16
 
- • Escriu la màscara de xarxa en Notació Decimal Puntuada i en binari.
- • Escriu la direcció de xarxa.
- • Escriu la direcció de difusió.
- • Si li assigno a un PC la direcció 172.175.14.0, és una direcció vàlida de la mateixa xarxa?
+* Escriu la màscara de xarxa en Notació Decimal Puntuada i en binari.
+* Escriu la direcció de xarxa.
+* Escriu la direcció de difusió.
+* Si li assigno a un PC la direcció 172.175.14.0, és una direcció vàlida de la mateixa xarxa?
 
 ### Apartat 2
 
