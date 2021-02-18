@@ -29,9 +29,6 @@ L’identificador  de  xarxa serveix es un IP especial que es fa servir per a id
 
 És la primera IP de la xarxa, és a dir, la que té a 0 tots els bits de la part de host.
 
-![images/p6_network_id.png](images/p6_network_id.png)
-
-En aquesta imatge, l'identificaodr de xarxa és `192.168.1.0\24`
 
 ### Adreça de Broadcasting/Difusió
 
@@ -41,6 +38,8 @@ L’adreça   de   broadcast   de   la   xarxa 192.168.1.0/24 és, per tant, 192
 Un paquet enviat a aquesta adreça es lliurat a totes i cadascuna de les màquines de la xarxa 192.168.1.0/24.
 
 ![images/p6_broadcast.gif](images/p6_broadcast.gif)
+
+A l'imatge també es veu l'adreça de Xarxa, que és la IP 192.168.1.0
 
 Per tant, amb el mateix exemple, a la xarxa 192.168.1.0/24 tinc disponible 254 IPs degut a que la primera IP és l'adreça de Xarxa i la darrera és l'adreça de Broadcast. És a dir, tinc 256-2 = 254
 
