@@ -115,6 +115,27 @@ En una xarxa /24 puc tenir 254 ordinadors. Per què?
 
 Quants ordenadors podem tenir en una xarxa /26? I en una /14?
 
+### Apartat 7
+
+Si tinc la màquina amb IP 192.168.4.2 /25
+
+* Escriu la màscara de xarxa en Notació Decimal Puntuada i en binari.
+* Escriu la direcció de xarxa.
+* Escriu la direcció de difusió.
+* Si li assigno a un PC la direcció 192.168.4.120, és una direcció vàlida de la mateixa xarxa?
+* Si li assigno a un PC la direcció 192.168.4.150, és una direcció vàlida de la mateixa xarxa?
+
+
+### Apartat 8
+
+Si tinc la màquina amb IP 10.220.5.7 / 10
+
+* Escriu la màscara de xarxa en Notació Decimal Puntuada i en binari.
+* Escriu la direcció de xarxa.
+* Escriu la direcció de difusió.
+* Si li assigno a un PC la direcció 10.192.0.21, és una direcció vàlida de la mateixa xarxa?
+* Si li assigno a un PC la direcció 10.221.5.6, és una direcció vàlida de la mateixa xarxa?
+
 ---
 
 *... continuarà...*
