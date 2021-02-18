@@ -78,12 +78,15 @@ Si tinc la màquina amb IP 172.175.12.2 /22
 
 ### Apartat 4
 
-Donades les següents adreces IP d'equips i les màscares corresponents, troba l'adreça de xarxa i l'adreça de difusió. Vaig donar també la classe de la IP i si és pública o privada.
+Donades les següents adreces IP d'equips i les màscares corresponents, troba l'adreça de xarxa i l'adreça de difusió. Dòna també la classe de la IP i si és pública o privada.
 
 ```
-127.23.44.38 /27, 12.34.66.198 /28, 192.168.1.189 /30, 120.120.120.23 /18, 50.60.70.80 /6
+127.23.44.38 /27
+12.34.66.198 /28
+192.168.1.189 /30
+120.120.120.23 /18
+50.60.70.80 /6
 ```
-
 
 ### Apartat 5
 
@@ -101,6 +104,14 @@ Comprova si les següents parelles d'ordinadors estan en la mateixa xarxa:
 ```
 
 ### Apartat 6
+
+En una xarxa /24 puc tenir 254 ordinadors. Per què?
+
+    Doncs /24 significa que dels 32 bits de la IP, 24 són de la part de xarxa i 8 són de la part de host.
+    Per tant, tinc 2^8 combinacions diferents de la part de host.
+      2^8 = 256
+    I he de restar 2 per que la primera és l'adreça de xarxa i la darrera és l'adreça de difusió.
+      256 - 2 = 254
 
 Quants ordenadors podem tenir en una xarxa /26? I en una /14?
 
