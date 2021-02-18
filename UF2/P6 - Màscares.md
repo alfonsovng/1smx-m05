@@ -136,6 +136,17 @@ Si tinc la màquina amb IP 10.220.5.7 / 10
 * Si li assigno a un PC la direcció 10.192.0.21, és una direcció vàlida de la mateixa xarxa?
 * Si li assigno a un PC la direcció 10.221.5.6, és una direcció vàlida de la mateixa xarxa?
 
----
+### Apartat 9
 
-*... continuarà...*
+Si tinc la màquina 192.168.43.3 i la 192.168.5.23. Tria la màscara adequada perquè sent ambdues de la mateixa xarxa, aquesta xarxa tingui el major nombre d'ordinadors possible.
+
+
+### Apartat 10
+
+Si tinc la màquina amb IP 10.4.5.6 / 12
+
+* Escriu la màscara de xarxa en Notació Decimal Puntuada i en binari.
+* Escriu la direcció de xarxa.
+* Escriu la direcció de difusió.
+* Si li assigno a un PC la direcció 10.12.255.7, és una direcció vàlida de la mateixa xarxa?
+* Si li assigno a un PC la direcció 10.19.255.6, és una direcció vàlida de la mateixa xarxa?
