@@ -29,9 +29,6 @@ L’identificador  de  xarxa serveix es un IP especial que es fa servir per a id
 
 És la primera IP de la xarxa, és a dir, la que té a 0 tots els bits de la part de host.
 
-![images/p6_network_id.png](images/p6_network_id.png)
-
-En aquesta imatge, l'identificaodr de xarxa és `192.168.1.0\24`
 
 ### Adreça de Broadcasting/Difusió
 
@@ -42,6 +39,8 @@ Un paquet enviat a aquesta adreça es lliurat a totes i cadascuna de les màquin
 
 ![images/p6_broadcast.gif](images/p6_broadcast.gif)
 
+A l'imatge també es veu l'adreça de Xarxa, que és la IP 192.168.1.0
+
 Per tant, amb el mateix exemple, a la xarxa 192.168.1.0/24 tinc disponible 254 IPs degut a que la primera IP és l'adreça de Xarxa i la darrera és l'adreça de Broadcast. És a dir, tinc 256-2 = 254
 
 ## Exercicis
@@ -50,10 +49,10 @@ Per tant, amb el mateix exemple, a la xarxa 192.168.1.0/24 tinc disponible 254 I
 
 Si tinc la màquina amb IP 172.175.12.2 /16
 
- • Escriu la màscara de xarxa en Notació Decimal Puntuada i en binari.
- • Escriu la direcció de xarxa.
- • Escriu la direcció de difusió.
- • Si li assigno a un PC la direcció 172.175.14.0, és una direcció vàlida de la mateixa xarxa?
+* Escriu la màscara de xarxa en Notació Decimal Puntuada i en binari.
+* Escriu la direcció de xarxa.
+* Escriu la direcció de difusió.
+* Si li assigno a un PC la direcció 172.175.14.0, és una direcció vàlida de la mateixa xarxa?
 
 ### Apartat 2
 
@@ -78,12 +77,15 @@ Si tinc la màquina amb IP 172.175.12.2 /22
 
 ### Apartat 4
 
-Donades les següents adreces IP d'equips i les màscares corresponents, troba l'adreça de xarxa i l'adreça de difusió. Vaig donar també la classe de la IP i si és pública o privada.
+Donades les següents adreces IP d'equips i les màscares corresponents, troba l'adreça de xarxa i l'adreça de difusió. Dòna també la classe de la IP i si és pública o privada.
 
 ```
-127.23.44.38 /27, 12.34.66.198 /28, 192.168.1.189 /30, 120.120.120.23 /18, 50.60.70.80 /6
+127.23.44.38 /27
+12.34.66.198 /28
+192.168.1.189 /30
+120.120.120.23 /18
+50.60.70.80 /6
 ```
-
 
 ### Apartat 5
 
@@ -102,8 +104,48 @@ Comprova si les següents parelles d'ordinadors estan en la mateixa xarxa:
 
 ### Apartat 6
 
+En una xarxa /24 puc tenir 254 ordinadors. Per què?
+
+    Doncs /24 significa que dels 32 bits de la IP, 24 són de la part de xarxa i 8 són de la part de host.
+    Per tant, tinc 2^8 combinacions diferents de la part de host.
+      2^8 = 256
+    I he de restar 2 per que la primera és l'adreça de xarxa i la darrera és l'adreça de difusió.
+      256 - 2 = 254
+
 Quants ordenadors podem tenir en una xarxa /26? I en una /14?
 
----
+### Apartat 7
 
-*... continuarà...*
+Si tinc la màquina amb IP 192.168.4.2 /25
+
+* Escriu la màscara de xarxa en Notació Decimal Puntuada i en binari.
+* Escriu la direcció de xarxa.
+* Escriu la direcció de difusió.
+* Si li assigno a un PC la direcció 192.168.4.120, és una direcció vàlida de la mateixa xarxa?
+* Si li assigno a un PC la direcció 192.168.4.150, és una direcció vàlida de la mateixa xarxa?
+
+
+### Apartat 8
+
+Si tinc la màquina amb IP 10.220.5.7 / 10
+
+* Escriu la màscara de xarxa en Notació Decimal Puntuada i en binari.
+* Escriu la direcció de xarxa.
+* Escriu la direcció de difusió.
+* Si li assigno a un PC la direcció 10.192.0.21, és una direcció vàlida de la mateixa xarxa?
+* Si li assigno a un PC la direcció 10.221.5.6, és una direcció vàlida de la mateixa xarxa?
+
+### Apartat 9
+
+Si tinc la màquina 192.168.43.3 i la 192.168.5.23. Tria la màscara adequada perquè sent ambdues de la mateixa xarxa, aquesta xarxa tingui el major nombre d'ordinadors possible.
+
+
+### Apartat 10
+
+Si tinc la màquina amb IP 10.4.5.6 / 12
+
+* Escriu la màscara de xarxa en Notació Decimal Puntuada i en binari.
+* Escriu la direcció de xarxa.
+* Escriu la direcció de difusió.
+* Si li assigno a un PC la direcció 10.12.255.7, és una direcció vàlida de la mateixa xarxa?
+* Si li assigno a un PC la direcció 10.19.255.6, és una direcció vàlida de la mateixa xarxa?
