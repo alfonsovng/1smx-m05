@@ -12,7 +12,7 @@ Consulta l'enllaç següent i prova d'entendre i explicar AMB LES TEVES PAREULES
 
 ## 2. Ubuntu Server 18.04 LTS
 
-Crea una nova màquina virtual con VirtualBox fent servir la ISO ubuntu-18.04.1-live-server-amd64.iso que tens al repositori samba del Institut. Selecciona com a xarxa la xarxa NAT que has creat en el punt anterior i posa-li un disc dur dinàmics de 10GB.. Com a hostname has de posar el teu nom i el mòdul, és a dir, en el meu cas seria m05-alfonso. No cal documentar el procés d'instal·lació.
+Crea una nova màquina virtual con VirtualBox fent servir la ISO **ubuntu-18.04.1-live-server-amd64.iso** que tens al repositori samba del Institut. Selecciona com a xarxa la xarxa NAT que has creat en el punt anterior i posa-li un disc dur dinàmic de 10GB i 1 GB de RAM. Com a hostname has de posar el teu nom i el mòdul, és a dir, en el meu cas seria **m05-alfonso**. No cal documentar el procés d'instal·lació.
 
 Respon, amb les teves paraules, a les següents preguntes:
 
@@ -23,7 +23,7 @@ Respon, amb les teves paraules, a les següents preguntes:
 
 ## 3. Comanda lshw
 
-Executa les següents comandes:
+Executa les següents comandes i fes captura de pantalla dels resultats:
 
     sudo lshw | more
     
@@ -31,13 +31,13 @@ Executa les següents comandes:
     
     sudo lshw -class network -short
 
-Busca i tracta d'explicar,, AMB LES TEVES PARAULES, què fa la comanda lshw. Pots buscar-ho per internet i/o també pots buscar informació amb la comanda `man`:
+Busca i tracta d'explicar, AMB LES TEVES PARAULES, què fa la comanda lshw. Pots buscar-ho per internet i/o també pots buscar informació amb la comanda `man`:
 
 	man lshw
 
 ## 4. Comanda ethtool
 
-A la columna Device de la darrera instrucció apareix el nom de la targeta de xarxa que tindràs. En el meu cas es diu *enp0s3*. Executa la instrucció següent possant, si cal, el nom del teu dispositiu de xarxa enlloc del *enp0s3*:
+A la columna Device de la darrera instrucció apareix el nom de la targeta de xarxa que tindràs. En el meu cas es diu *enp0s3*. Executa la instrucció següent possant, si cal, el nom del teu dispositiu de xarxa enlloc del *enp0s3*. Recorda fer captura de pantalla del resultat:
 
 	sudo ethtool enp0s3
 
