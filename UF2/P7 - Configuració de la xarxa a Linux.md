@@ -50,5 +50,39 @@ Quina informació surt? Què fa la comanda ethtool? Igual que abans, pots consul
 Executa ara la comanda `ip a`. Quantes targetes de xarxa apareixen? Hi ha una que és diu **loopback**. Busca informació sobre que és i per a que serveix. Pots consultar aquest enllaç si vols: https://askubuntu.com/questions/247625/what-is-the-loopback-device-and-how-do-i-use-it
 
 
+## 6. IFCONFIG
 
-*... continuarà ...*
+La comanda UNIX/LINUX `ifconfig` (de interface configurator, configurador d'interfícies) serveix per configurar i controlar interfícies de xarxa TCP/IP des de la línia de comandes.
+
+Els usos habituals de l'ifconfig inclouen configurar l'adreça IP d'una interfície i la seva màscara de xarxa, i deshabilitar o habilitar una certa interfície. A l'arrencada, moltes distribucions tipus UNIX inicialitzen les seves interfícies de xarxa amb «shell-scripts» que criden l'ifconfig.
+
+La comanda ifconfig accepta diversos paràmetres. Generalment si s'executa en la forma:
+
+    ifconfig interfície [adreça [paràmetres] ]
+
+On:
+
+La interfície és el nom de la interfície i adreça és l'adreça IP que s'assigna a aquesta interfície.
+
+Si ifconfig s'executa afegint únicament el nom de la interfície, presentarà la informació de la configuració d'aquesta interfície. Si s'executa sense paràmetres, presenta totes les interfícies configurades fins al moment.
+
+Com a exemple, la consulta de la configuració de la targeta de xarxa `enp0s3` seria:
+
+    ifconfig enp0s3
+
+:bangbang: Fes captura de pantalla executant aquesta comanda
+
+Les línies RX i TX donen idea dels paquets rebuts o transmesos sense errors, del nombre d'errors ocorreguts, de quants paquets han estat descartats (segurament per memòria insuficient), i quants han estat perduts per desbordament, condició que ocorre quan la recepció de paquets és massa ràpida i el nucli és incapaç de donar servei al paquet anterior abans de l'arribada del nou paquet.
+
+:bangbang: Observa que es mostra un valor de MTU. Quin valor és? Busca a l'enllaç següent que vol dir MTU i explica-ho amb les teves paraules: https://es.wikipedia.org/wiki/Unidad_m%C3%A1xima_de_transferencia
+
+Consulta el manual següent https://www.computerhope.com/unix/uifconfi.htm i fes les tasques següents:
+
+:bangbang: Deshabilita la teva targeta de xarxa i comprova que no tens xarxa fent ping a la màquina 8.8.8.8
+
+:bangbang: Torna a habilitar la targeta de xarxa i comprova que tens xarxa fent de nou un ping. Pot trigar una mica en habilitar-se la xarxa!
+
+## 7. ROUTE
+
+Consula l'enllaç següent i explica amb les teves pròpies paraules que és la taula d'enrutament i que fa la comanda `route` : https://linuxhint.com/route_command_linux/
+Fes una captutura de pantalla executant la comanda `route`. 
