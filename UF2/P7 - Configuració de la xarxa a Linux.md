@@ -8,13 +8,13 @@ Primer de tot, crea una xarxa NAT pròpia amb VirtualBox:
 
 Farem servir la xarxa privada 192.168.1.0/24
 
-Consulta l'enllaç següent i prova d'entendre i explicar AMB LES TEVES PAREULES quines opcions de xarxa permet Virtual Box i en que consisteixen: https://www.virtualbox.org/manual/ch06.html#networkingmodes
+:bangbang: Consulta l'enllaç següent i prova d'entendre i explicar AMB LES TEVES PAREULES quines opcions de xarxa permet Virtual Box i en que consisteixen: https://www.virtualbox.org/manual/ch06.html#networkingmodes
 
 ## 2. Ubuntu Server 18.04 LTS
 
 Crea una nova màquina virtual con VirtualBox fent servir la ISO **ubuntu-18.04.1-live-server-amd64.iso** que tens al repositori samba del Institut. Selecciona com a xarxa la xarxa NAT que has creat en el punt anterior i posa-li un disc dur dinàmic de 10GB i 1 GB de RAM. Com a hostname has de posar el teu nom i el mòdul, és a dir, en el meu cas seria **m05-alfonso**. No cal documentar el procés d'instal·lació.
 
-Respon, amb les teves paraules, a les següents preguntes:
+:bangbang: Respon, amb les teves paraules, a les següents preguntes:
 
 1. Què vol dir LTS?
 2. Fins quan té suport aquesta versió que has instat·lat?
@@ -31,7 +31,7 @@ Executa les següents comandes i fes captura de pantalla dels resultats:
     
     sudo lshw -class network -short
 
-Busca i tracta d'explicar, AMB LES TEVES PARAULES, què fa la comanda lshw. Pots buscar-ho per internet i/o també pots buscar informació amb la comanda `man`:
+:bangbang: Busca i tracta d'explicar, AMB LES TEVES PARAULES, què fa la comanda lshw. Pots buscar-ho per internet i/o també pots buscar informació amb la comanda `man`:
 
 	man lshw
 
@@ -41,13 +41,13 @@ A la columna Device de la darrera instrucció apareix el nom de la targeta de xa
 
 	sudo ethtool enp0s3
 
-Quina informació surt? Què fa la comanda ethtool? Igual que abans, pots consultar-ho amb la comanda `man`:
+:bangbang: Quina informació surt? Què fa la comanda ethtool? Igual que abans, pots consultar-ho amb la comanda `man`:
 
 	man ethtool
 
 ## 5. Loopback
 
-Executa ara la comanda `ip a`. Quantes targetes de xarxa apareixen? Hi ha una que és diu **loopback**. Busca informació sobre que és i per a que serveix. Pots consultar aquest enllaç si vols: https://askubuntu.com/questions/247625/what-is-the-loopback-device-and-how-do-i-use-it
+:bangbang: Executa ara la comanda `ip a`. Quantes targetes de xarxa apareixen? Hi ha una que és diu **loopback**. Busca informació sobre que és i per a que serveix. Pots consultar aquest enllaç si vols: https://askubuntu.com/questions/247625/what-is-the-loopback-device-and-how-do-i-use-it
 
 
 ## 6. IFCONFIG
