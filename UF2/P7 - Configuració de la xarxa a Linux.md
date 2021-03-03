@@ -85,4 +85,14 @@ Consulta el manual següent https://www.computerhope.com/unix/uifconfi.htm i fes
 ## 7. ROUTE
 
 Consula l'enllaç següent i explica amb les teves pròpies paraules que és la taula d'enrutament i que fa la comanda `route` : https://linuxhint.com/route_command_linux/
-Fes una captutura de pantalla executant la comanda `route`. 
+Fes una captutura de pantalla executant la comanda `route -n`. 
+
+La manera que fa servir la taula d'enrutament el teu equip és mirant primer les instruccions més específiques i les més generals al final.
+
+Les decisions d'enrutament són bastant senzilles per a la majoria d’equips:
+
+* Si el destí es troba a la xarxa local, envieu les dades directament al destí.
+* Si el destií es troba en una xarxa remota que es pot accedir mitjançant una passarel·la local (*gateway*) que apareix a la taula d'encaminament, envieu-la a la passarel·la definida explícitament.
+* Si el destí es troba en una xarxa remota i no hi ha cap altra entrada que defineixi una ruta cap a aquest amfitrió, envieu les dades a la passarel·la predeterminada.
+
+:bangbang: Explica que volen dir els flags que aparareixen quan executes la comanda `route -n` fent servir l'enllaç següent: https://www.thegeekstuff.com/2012/05/route-flags/
