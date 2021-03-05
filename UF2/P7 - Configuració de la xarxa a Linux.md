@@ -96,3 +96,16 @@ Les decisions d'enrutament són bastant senzilles per a la majoria d’equips:
 * Si el destí es troba en una xarxa remota i no hi ha cap altra entrada que defineixi una ruta cap a aquest amfitrió, envieu les dades a la passarel·la predeterminada.
 
 :bangbang: Explica que volen dir els flags que aparareixen quan executes la comanda `route -n` fent servir l'enllaç següent: https://www.thegeekstuff.com/2012/05/route-flags/
+
+## 8. IP
+
+Mostra i manipula rutes i dispositius de xarxa. Si executem `ip addr` obtindrem informació similar a executar la comanda `ifconfig`, però amb un format diferent.
+
+:bangbang: Fes una captura de pantalla executant la comanda `ip a` (és el mateix que `ip addr`) 
+
+Si fem `ip route` es mostra informació similar a executar la comanda route, pero amb un format diferent i afegint-hi la porta d’enllaç. 
+
+:bangbang: Fes una captura de pantalla executant la comanda `ip route`.
+
+:bangbang: Consula l'enllaç següent i, com has fet abans amb la comanda `ifconfig`, deshabilita (`down`) i habilita (`up`) la targeta de xarxa: https://linuxize.com/post/linux-ip-command/
+
