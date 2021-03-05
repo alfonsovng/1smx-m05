@@ -107,5 +107,5 @@ Si fem `ip route` es mostra informació similar a executar la comanda route, p
 
 :bangbang: Fes una captura de pantalla executant la comanda `ip route`.
 
-:bangbang: Consula l'enllaç següent i, com has fet abans amb la comanda `ifconfig`, deshabilita (`down`) i habilita (`up`) la targeta de xarxa: https://linuxize.com/post/linux-ip-command/
+:bangbang: Consula l'enllaç següent i, com has fet abans amb la comanda `ifconfig`, deshabilita (`down`) i habilita (`up`) la targeta de xarxa fent servir la comanda `ìp`: https://linuxize.com/post/linux-ip-command/
 
