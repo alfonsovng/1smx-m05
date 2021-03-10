@@ -150,4 +150,27 @@ Per aplicar els canvis, executo `sudo netplan apply` i comprova amb la comanda `
 
 ## 10. networkctl
 
-.. TODO ...
+Abans d'utilitzar aquesta eina cal assegurar-se que **systemd-networkd** està funcionant en el sistema. **systemd-networkd** és un dimoni del sistema que fa servir les configuracions de xarxa. Detecta i configura els dispositius de xarxa del sistema.
+
+Podem executar aquesta comanda per conèixer l'estat del dimoni:
+
+	sudo systemctl status systemd-networkd
+
+Si veiem que no està executant-se, hauríem de fer el següent:
+
+	sudo systemctl start systemd-networkd
+
+I evidentment, també podem aturar el servei amb:
+
+	sudo systemctl stop systemd-networkd
+
+:bangbang: Comproveu que el servei systemd-networkd està efectivament funcionant al vostre sistema.
+
+Un cop comprovem que està executant-se, simplement hem de llançar la comanda `networkctl` o `networkctl -a`. Aquí apareixerà el resum dels dispositius de xarxa i l'estat dels mateixos.
+
+:bangbang: Per mostrar informació sobre els enllaços especificats, com tipus, estat, controlador del mòdul del nucli, maquinari i adreça IP, DNS configurat, servidor i altres, cal usar la comanda d'estat `networkctl status`. Fes una captura de pantalla mostrant l'execució d'aquesta comanda.
+
+:bangbang: Si volem veure l'estat d'un dispositiu en concret, cal utilitzar la comanda `networkctl status "nom"`. Hem de canviar "nom" pel nom del dispositiu que volem. Executa la comanda anterior posant el nom de la teva targeta de xarxa.
+
+
+
