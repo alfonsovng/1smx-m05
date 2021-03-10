@@ -109,3 +109,45 @@ Si fem `ip route` es mostra informació similar a executar la comanda route, p
 
 :bangbang: Consula l'enllaç següent i, com has fet abans amb la comanda `ifconfig`, deshabilita (`down`) i habilita (`up`) la targeta de xarxa fent servir la comanda `ìp`: https://linuxize.com/post/linux-ip-command/
 
+## 9. Netplan
+
+A partir de la versió 17.10 de l’Ubuntu la utilitat que ens permet modificar la configuració de xarxa d’un sistema textual es denomina Netplan.
+
+L’arxiu de text de configuració de la xarxa serà un arxiu amb extensió .yaml que es trobarà a la carpeta `/etc/netplan`.
+
+Per a fer la configuració de les targetes de xarxa editarem l'arxiu (per a fer-ho cal fer servir la comanda sudo nano `/etc/netplan/50-cloud-init.yaml`).  Allà llistarem totes les targetes del sistema i les hi donarem la configuració que vulguem.
+
+*NOTA: per editar fitxers farem servir la comanda nano, que haurem d’executar amb privilegis de root per tal de poder guardar els canvis que realitzem.*
+
+https://www.nanotutoriales.com/tutorial-del-editor-de-texto-nano
+
+
+![p7-netplan.png](images/p7-netplan.png)
+
+En el fitxer exemple de la captura de pantalla anterior podem veure dues interfícies de xarxa configurades, `enp0s3` i `enp0s8`.
+
+La primera està configurada per obtenir els seus paràmetres IP via DHCP i la segona està configurada estàticament.
+
+Els paràmetres a configurar que hi apareixen són:
+
+* enp0s8: nom de la interfície de xarxa a configurar
+* dhcp4 i dhcp6: fa referència al mètode de DHCP d'una interfície per a IPv4 i IPv6 respectivament. Si assignem a aquest paràmetre el valor true configurarem la interfície per a a obtenir els seus paràmetres IP via DHCP. Si li assignem el valor false haurem de configurar-los nosaltres estàticament:
+* addresses: per definir l’adreça IP estàtica per a la interfície.
+* gateway4: permet definir la portal d’enllaç per defecte que utilitzarà la interfície.
+* nameservers: seguit de nou d’una línia amb el camp adresses: permet definir les d'adreces IP dels servidors DNS que utilitzarà la interfície de xarxa.
+
+:bangbang: Modifica el teu fitxer `/etc/netplan/50-cloud-init.yaml` i configura la teva targeta de xarxa amb l'adreça estàtica `192.168.1.78` i la resta de paràmetres tal i com pots veure a la imatge següent:
+
+![p7-netplan-nou.png](images/p7-netplan-nou.png)
+
+Per aplicar els canvis, executo `sudo netplan apply` i comprova amb la comanda `ip a` que tens l'adreça IP `192.168.1.78` 
+
+:bangbang: Comprova amb la comanda `nslookup` quins servidors DNS tens configurat. Per fer-ho, executa la comanda ` nslookup twitch.tv`. La linea que comença per `Server:` t'indica quin servidor DNS estàs fent servir.
+
+:bangbang: Esbrina que fa la comanda `nslookup` consultant l'enllaç: https://es.wikipedia.org/wiki/Nslookup
+
+:bangbang: Modifica de nou el fitxer i torna a posar la configuració inicial per DHCP. Executa de nou `sudo netplan apply` i comprova amb la comanda `ip a` quina adreça IP tens.
+
+## 10. networkctl
+
+.. TODO ...
