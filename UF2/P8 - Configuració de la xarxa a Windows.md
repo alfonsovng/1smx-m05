@@ -2,7 +2,7 @@
 
 En aquesta pràctica treballarem amb diverses utilitats que incorporen els sistemes operatius Windows, tant en mode gràfic com mitjançant interfície de comandes, que permeten la configuració del subsistema IP del sistema al qual s'allotgen.
 
-Per fer-ho, utilitzarem una màquina virtual Windows dins del nostre sistema amfitrió Linux, de manera que puguem gaudir de privilegis administratius en tot moment i no ens trobem amb cap limitació a l'hora de poder modificar la configuració del nostre sistema, alhora que preservem la integritat de la màquina amfitriona.
+Per fer-ho, utilitzarem una màquina virtual **Windows 10** dins del nostre sistema amfitrió Linux, de manera que puguem gaudir de privilegis administratius en tot moment i no ens trobem amb cap limitació a l'hora de poder modificar la configuració del nostre sistema, alhora que preservem la integritat de la màquina amfitriona.
 
 La màquina virtual hauria de disposar d'una interfície de xarxa virtual incorporada i configurada en mode **Xarxa NAT** amb la configuració de Xarxa NAT que vam crear a la pràctica anterior.
 
