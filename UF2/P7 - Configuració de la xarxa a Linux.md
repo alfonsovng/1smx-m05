@@ -150,7 +150,7 @@ Per aplicar els canvis, executo `sudo netplan apply` i comprova amb la comanda `
 
 ## 10. networkctl
 
-Abans d'utilitzar aquesta eina cal assegurar-se que **systemd-networkd** està funcionant en el sistema. **systemd-networkd** és un dimoni del sistema que fa servir les configuracions de xarxa. Detecta i configura els dispositius de xarxa del sistema.
+Abans d'utilitzar aquesta eina cal assegurar-se que **systemd-networkd** està funcionant en el sistema. **systemd-networkd** és un dimoni del sistema que fa servir les configuracions de xarxa. Detecta i configura els dispositius de xarxa del sistema. Pots trobar més informació a l'enllaç següent: http://manpages.ubuntu.com/manpages/bionic/man8/systemd-networkd.service.8.html
 
 Podem executar aquesta comanda per conèixer l'estat del dimoni:
 
