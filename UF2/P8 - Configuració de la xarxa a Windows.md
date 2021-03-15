@@ -58,19 +58,21 @@ Tancarem ara la finestra anterior i tornarem ara a la de la passa 3.
 
 Es paràmetres que haureu de configurar seran:
 
-- Adreça IP: haureu de demanar-li al/a la professor/a una disponible dins del rang de virtualització del grup, i anotar-la en algun lloc que tingueu fàcilment accessible, ja que l'haureu de fer servir sovint al llarg del curs.
+- Adreça IP: Fareu servir una IP del la vostra xarxa NAT: 192.168.1.123
 
-- Màscara de subxarxa: serà la de 16 bits, 255.255.0.0
+- Màscara de subxarxa: serà la de 24 bits, 255.255.255.0
 
-- Porta d'enllaç predeterminada: serà l'adreça IP del router virtual de la nostra subxarxa, que fa aquesta funció, 10.109.0.1
+- Porta d'enllaç predeterminada: serà l'adreça IP del router virtual de la nostra subxarxa, que fa aquesta funció, 192.168.1.1
 
-- Servidor DNS preferit: farem servir els de opendns. Busca quins són.
+- Servidor DNS preferit: farem servir un dels servidors de opendns. Busca quins són a https://www.opendns.com/
 
-- Servidor DNS alternatiu: de moment ho deixarem en blanc. Es fa servir només en cas de caiguda del servidor DNS preferit.
+- Servidor DNS alternatiu: posa l'altre servidor DNS d'opendns.
 
 Enganxeu aquí la captura de pantalla de la configuració final i després podeu seleccionar Acceptar i Acceptar una segona vegada, per tal que s'apliqui. 
 
 Enganxeu ara una segona captura de pantalla de l'opció Detalles per visualitzar que efectivament els canvis a la configuració s'han aplicat correctament.
+
+Respón també a la pregunta següent: per quina raó és recomenable fer servir un DNS com el d'opendns?
 
 ---
 
