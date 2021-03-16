@@ -100,7 +100,7 @@ Wikipèdia està prou bé, almenys per començar.
 
 - Quins paràmetres assigna el servidor al client?
 
-- Què és i quina funció té el Identificador de classe DHCP d'una targeta de xarxa?
+- Què és i quina funció té el Identificador de classe DHCP d'una targeta de xarxa (vendor class in English)?
 
 ---
 
