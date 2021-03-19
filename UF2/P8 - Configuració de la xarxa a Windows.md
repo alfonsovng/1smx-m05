@@ -229,9 +229,9 @@ Les diverses comandes que es poden fer servir són:
 ### EXEMPLES DE FUNCIONAMENT
 
 
-1. El primer que volem fer en aquesta pràctica es fer una còpia de seguretat de totes les dades abans de fer cap modificació. Com es pot fer això? Doncs fent servir la comanda: per fer-ho Inicialment obrirem una finestra MSDos (executarcmd) i posarem:
+1. El primer que volem fer en aquesta pràctica es fer una còpia de seguretat de totes les dades abans de fer cap modificació. Com es pot fer això? Doncs fent servir la comanda: per fer-ho Inicialment obrirem una finestra MSDos (executar cmd) i posarem:
 
-		netsh -c interface dump > c:\conf.txt
+		netsh -c interface dump > arxiu.txt
 
 2. Un cop fet la còpia de seguretat ja podem començar a manipular l’entorn sense por de fer malbé la configuració. Posem:
 
@@ -283,7 +283,7 @@ Les diverses comandes que es poden fer servir són:
     
 12. Per recuperar la configuració guardada en un arxiu es pot fer mitjançant la següent comanda.
     
-    	netsh -f c:\arxiu.txt
+    	netsh -f arxiu.txt
 
 ---
 
