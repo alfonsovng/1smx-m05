@@ -295,7 +295,7 @@ Les diverses comandes que es poden fer servir són:
 
 3. Fent servir les comandes anteriors, visualitza la configuració ip de la targeta “Conexión de área local” al sistema. Indica quina comanda fas servir.
 
-4. Dins del context interface i ip, canvia la ip de la “connexió d’àrea local” a una de l’aula que no estigui utilitzada (demaneu al professor) i verifica fent servir la comanda show que s’ha canviat correctament. (fixeu-vos al pas 6).
+4. Dins del context interface i ip, canvia la ip de la “connexió d’àrea local” la ip 192.168.1.234 i verifica fent servir la comanda show que s’ha canviat correctament. (fixeu-vos al pas 6).
 
 5. Canvia el dns de la interfície “Connexió d’àrea local” al 8.8.8.8 (primari). Indica quina comanda fas servir i verifica que ha funcionat.
 
