@@ -191,7 +191,7 @@ Per entendre aquests paràmetres, haurem d'investigar de nou una mica, navegant 
 
 - Què és i quina funció té el protocol DNS?
 - Quins components conformen el sistema DNS?
-- Quins dos tipus de consultes fonamentals implementa el protocol DNS?
+- Quins dos tipus de resolucions implementa el protocol DNS?
 - Quins són els tipus de registres DNS més importants?
 - Què és una caché DNS?
 
@@ -208,7 +208,7 @@ Esborreu ara mitjançant la utilitat ipconfig i el paràmetre corresponent el co
 
 Netsh es una utilitat de línia de comandes que ens ofereix opcions per la configuració de xarxa. Entre les principals opcions que es poden realitzar, esta la possibilitat de veure, modificar, administrar i diagnosticar la configuració de la xarxa local. 
 	
-A la línia de comandes (executarcmd) s’ha d’escriure netsh i entrarem a l’entorn, de forma que canviarà el prompt a:
+A la línia de comandes (executar cmd) s’ha d’escriure netsh i entrarem a l’entorn, de forma que canviarà el prompt a:
 
 			netsh
 			netsh>
